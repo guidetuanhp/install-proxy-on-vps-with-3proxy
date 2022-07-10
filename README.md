@@ -16,6 +16,7 @@ Download, make executable and run with these lines :
     wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/install-proxy-on-vps-with-3proxy/main/3proxyinstaller.sh
     chmod +x 3proxyinstaller.sh
     ./3proxyinstaller.sh
+    /etc/init.d/3proxyinit start
     
     or
     
