@@ -13,7 +13,7 @@ Download, make executable and run with these lines :
 
     
     sudo -i
-    wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/3proxy/main/3proxyinstaller.sh
+    wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/install-proxy-on-vps-with-3proxy/main/3proxyinstaller.sh
     chmod +x 3proxyinstaller.sh
     ./3proxyinstaller.sh
     
