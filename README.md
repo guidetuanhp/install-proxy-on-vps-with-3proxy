@@ -20,9 +20,10 @@ Download, make executable and run with these lines :
     or
     
     sudo -i
-    wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/3proxy/main/3proxyinstaller_no_auth.sh
-    chmod +x 3proxyinstaller.sh
-    ./3proxyinstaller.sh
+    wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/install-proxy-on-vps-with-3proxy/main/3proxyinstaller_no_auth.sh
+    chmod +x 3proxyinstaller_no_auth.sh
+    ./3proxyinstaller_no_auth.sh
+    /etc/init.d/3proxyinit start
 
 
 After install : CHANGE THE BLOODY DEFAULT USERNAME AND PASSWORD !!! 
