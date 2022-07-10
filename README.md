@@ -20,11 +20,12 @@ After install : CHANGE THE BLOODY DEFAULT USERNAME AND PASSWORD !!!
 	
 Example change line inside .proxyauth
 
-    johndoe:CL:johndoepassword123
+    proxyuser:CL:proxypassword
 
-You can also change the port, default is 3128
+You can also change the port, default https is 2610, socks5 is 2617
 
     nano /etc/3proxy/3proxy.cfg
+    
     
 
 Once you've change the username / password you can start the proxy 
