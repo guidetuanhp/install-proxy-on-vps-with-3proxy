@@ -16,6 +16,14 @@ Download, make executable and run with these lines :
     wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/3proxy/main/3proxyinstaller.sh
     chmod +x 3proxyinstaller.sh
     ./3proxyinstaller.sh
+    
+    or
+    
+    sudo -i
+    wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/3proxy/main/3proxyinstaller_no_auth.sh
+    chmod +x 3proxyinstaller.sh
+    ./3proxyinstaller.sh
+
 
 After install : CHANGE THE BLOODY DEFAULT USERNAME AND PASSWORD !!! 
 
