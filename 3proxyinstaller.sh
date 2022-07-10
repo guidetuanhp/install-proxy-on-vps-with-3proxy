@@ -1,8 +1,8 @@
 apt-get update && apt-get -y upgrade
 apt-get install -y build-essential nano
-wget --no-check-certificate https://raw.githubusercontent.com/benjamin74/3proxy/master/archive/3proxy-3proxy-0.8.6.tar.gz
-tar xzf 3proxy-3proxy-0.8.6.tar.gz
-cd 3proxy-3proxy-0.8.6
+wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/3proxy/main/archive/3proxy-0.9.4.tar.gz
+tar xzf 3proxy-0.9.4.tar.gz
+cd 3proxy-0.9.4
 make -f Makefile.Linux
 cd src
 mkdir /etc/3proxy/
