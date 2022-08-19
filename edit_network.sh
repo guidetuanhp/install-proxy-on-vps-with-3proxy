@@ -1,5 +1,5 @@
 install_3proxy() {
-wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/install-proxy-on-vps-with-3proxy/main/3proxyinstaller_no_auth.sh
+wget https://raw.githubusercontent.com/guidetuanhp/install-proxy-on-vps-with-3proxy/main/3proxyinstaller_no_auth.sh
 && chmod +x 3proxyinstaller_no_auth.sh && ./3proxyinstaller_no_auth.sh
 }
 
