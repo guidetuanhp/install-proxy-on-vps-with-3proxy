@@ -12,8 +12,8 @@ wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/instal
 chmod 600 /etc/3proxy/3proxy.cfg
 
 IP=($(dig +short myip.opendns.com @resolver1.opendns.com))
-USERNAME=$(< /dev/urandom tr -dc 'A-Za-z' | head -c4)
-PASS=$(< /dev/urandom tr -dc 'A-Za-z0-9' | head -c4)
+USERNAME="guideproxy"
+PASS="proxyguide"
 echo "$USERNAME:CL:$PASS" > /etc/3proxy/.proxyauth
 chmod 600 /etc/3proxy/.proxyauth
 cat .proxyauth
