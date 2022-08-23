@@ -16,8 +16,8 @@ sudo netplan apply
 update_ip() {
 /etc/init.d/3proxyinit start
 }
-install_3proxy
 edit_network
 echo "sleep 3 seconds"
 sleep 3
+install_3proxy
 update_ip
