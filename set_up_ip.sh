@@ -6,10 +6,9 @@ sudo cp 50-cloud-init.yaml 51-cloud-init.yaml
 sudo cat 51-cloud-init.yaml network.txt > 50-cloud-init.yaml
 sudo netplan apply
 }
-input_token(){
-  read -p 'Enter Token: ' TMTOKEN
-}
+
 add_ip() {
+read -p 'Enter Token: ' TMTOKEN
 apt-get update
 apt install docker.io
 docker network create my_network_1 --driver bridge --subnet 172.18.0.0/16
@@ -47,6 +46,5 @@ docker run -d --network my_network_10 --name tm_10 traffmonetizer/cli start acce
 }
 edit_network
 echo "edit_network done"
-input_token
 add_ip
 echo "add_ip done"
