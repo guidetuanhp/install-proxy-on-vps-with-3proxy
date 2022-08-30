@@ -7,7 +7,7 @@ sudo cat 51-cloud-init.yaml network.txt > 50-cloud-init.yaml
 sudo netplan apply
 }
 input_token(){
-  [ -z $TMTOKEN ] && reading " Enter your token, something end with =, if you do not find it, open https://traffmonetizer.com/?aff=247346: " TMTOKEN
+  read -p 'Enter Token: ' TMTOKEN
 }
 add_ip() {
 apt-get update
