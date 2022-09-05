@@ -10,14 +10,9 @@ mv 3proxy /etc/3proxy/
 cd /etc/3proxy/
 wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/install-proxy-on-vps-with-3proxy/main/3proxy.cfg
 chmod 600 /etc/3proxy/3proxy.cfg
-
-IP=($(dig +short myip.opendns.com @resolver1.opendns.com))
-USERNAME="guideproxy"
-PASS="proxyguide"
-echo "$USERNAME:CL:$PASS" > /etc/3proxy/.proxyauth
+wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/install-proxy-on-vps-with-3proxy/main/.proxyauth
 chmod 600 /etc/3proxy/.proxyauth
-cat .proxyauth
-echo $IP:2610:$USERNAME:$PASS
 cd /etc/init.d/
 wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/install-proxy-on-vps-with-3proxy/main/3proxyinit
 chmod  +x /etc/init.d/3proxyinit
+update-rc.d 3proxyinit_no_auth defaults
