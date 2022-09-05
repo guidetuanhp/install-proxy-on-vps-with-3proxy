@@ -15,4 +15,4 @@ chmod 600 /etc/3proxy/.proxyauth
 cd /etc/init.d/
 wget --no-check-certificate https://raw.githubusercontent.com/guidetuanhp/install-proxy-on-vps-with-3proxy/main/3proxyinit
 chmod  +x /etc/init.d/3proxyinit
-update-rc.d 3proxyinit_no_auth defaults
+update-rc.d 3proxyinit defaults
