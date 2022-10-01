@@ -14,7 +14,7 @@ sudo netplan apply
 }
 
 update_ip() {
-/etc/init.d/3proxyinit start
+/etc/init.d/3proxyinit20 start
 }
 edit_network
 echo "sleep 3 seconds"
