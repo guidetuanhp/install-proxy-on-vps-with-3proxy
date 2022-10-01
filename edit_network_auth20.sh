@@ -1,6 +1,6 @@
 install_3proxy() {
 wget https://raw.githubusercontent.com/guidetuanhp/install-proxy-on-vps-with-3proxy/main/3proxyinstaller.sh
-chmod +x 3proxyinstaller.sh 
+chmod +x 3proxyinstaller20.sh 
 ./3proxyinstaller.sh
 }
 
